@@ -9,6 +9,7 @@ import {selectAuth} from './selectors';
 import Firebase from 'firebase';
 import {facebookSDK} from '../../utils/authentication';
 import {facebookSdkLoaded} from './actions';
+import {FIREBASE_INIT_APP} from './constants';
 import Auth from '../../components/CheckAuth';
 import Home from '../Home';
 import Bookmark from '../Bookmark';
@@ -32,14 +33,7 @@ class App extends React.Component {
       }
     );
     if (!Firebase.apps.length) {
-      Firebase.initializeApp({
-        apiKey: "AIzaSyB2jt_87gX5Dzd8KkP9eF5FqzxjC-_ZuwQ",
-        authDomain: "reactsearchmovie.firebaseapp.com",
-        databaseURL: "https://reactsearchmovie.firebaseio.com",
-        projectId: "reactsearchmovie",
-        storageBucket: "reactsearchmovie.appspot.com",
-        messagingSenderId: "243356043923"
-      });
+      Firebase.initializeApp(FIREBASE_INIT_APP);
     }
   }
 

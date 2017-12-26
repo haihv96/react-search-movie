@@ -11,3 +11,12 @@ export const BOOKMARK_MOVIE = 'BOOKMARK_MOVIE';
 export const BOOKMARK_MOVIE_SUCCESS = 'BOOKMARK_MOVIE_SUCCESS';
 export const REMOVE_BOOKMARK_MOVIE = 'REMOVE_BOOKMARK_MOVIE';
 export const REMOVE_BOOKMARK_MOVIE_SUCCESS = 'REMOVE_BOOKMARK_MOVIE_SUCCESS';
+export const FACEBOOK_APP_ID = '1900284210301960';
+export const FIREBASE_INIT_APP = {
+  apiKey: "AIzaSyB2jt_87gX5Dzd8KkP9eF5FqzxjC-_ZuwQ",
+  authDomain: "reactsearchmovie.firebaseapp.com",
+  databaseURL: "https://reactsearchmovie.firebaseio.com",
+  projectId: "reactsearchmovie",
+  storageBucket: "reactsearchmovie.appspot.com",
+  messagingSenderId: "243356043923"
+};

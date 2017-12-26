@@ -1,8 +1,10 @@
+import {FACEBOOK_APP_ID} from '../containers/App/constants';
+
 export const facebookSDK = () => {
   return new Promise((resolve, reject) => {
     window.fbAsyncInit = () => {
       window.FB.init({
-        appId: '1900284210301960',
+        appId: FACEBOOK_APP_ID,
         cookie: true,
         xfbml: true,
         version: 'v2.11'

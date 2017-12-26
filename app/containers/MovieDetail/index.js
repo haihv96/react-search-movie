@@ -27,8 +27,6 @@ class MovieDetail extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log(nextProps.match.params.id);
-    console.log(this.props.match.params.id);
     if (nextProps.match.params.id != this.props.match.params.id) {
       nextProps.dispatchLoadSimpleMovieDetail(nextProps.match.params.id);
       animateScroll.scrollToTop({duration: 200});
