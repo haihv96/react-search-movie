@@ -1,17 +1,12 @@
-/**
-*
-* ToggleOption
-*
-*/
-
 import React from 'react';
 import PropTypes from 'prop-types';
-import { injectIntl, intlShape } from 'react-intl';
+import {injectIntl, intlShape} from 'react-intl';
+import {Option} from './styles';
 
-const ToggleOption = ({ value, message, intl }) => (
-  <option value={value}>
+const ToggleOption = ({value, message, intl}) => (
+  <Option value={value}>
     {message ? intl.formatMessage(message) : value}
-  </option>
+  </Option>
 );
 
 ToggleOption.propTypes = {

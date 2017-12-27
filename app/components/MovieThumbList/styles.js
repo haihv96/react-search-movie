@@ -13,7 +13,7 @@ export const MoviesContainer = styled.div`
      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
   }
   &::-webkit-scrollbar-thumb {
-    background-color: #505050;
+    background-color: #080808;
     border-radius: 10px;
     outline: 1px solid #b1d1ea;
   }

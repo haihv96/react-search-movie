@@ -39,23 +39,25 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <Router>
+      <Router>
+        <div>
+          <Auth/>
+          <Notification/>
+          <Route component={Navigation}/>
           <div className="container">
-            <Auth/>
-            <Notification/>
-            <Route component={Navigation}/>
-            <Switch>
-              <Route exact path="/" component={Home}/>
-              <AuthRouteProtected exact path="/profile" component={Profile}/>
-              <AuthRouteProtected exact path="/bookmarks" component={Bookmark}/>
-              <Route exact path="/movies/:id" component={MovieDetail}/>
-              <Route component={NotFoundPage}/>
-            </Switch>
-            <Footer/>
+            <div className="row">
+              <Switch>
+                <Route exact path="/" component={Home}/>
+                <AuthRouteProtected exact path="/profile" component={Profile}/>
+                <AuthRouteProtected exact path="/bookmarks" component={Bookmark}/>
+                <Route exact path="/movies/:id" component={MovieDetail}/>
+                <Route component={NotFoundPage}/>
+              </Switch>
+              <Footer/>
+            </div>
           </div>
-        </Router>
-      </div>
+        </div>
+      </Router>
     )
   }
 }

@@ -4,7 +4,16 @@ import {connect} from 'react-redux';
 import {createStructuredSelector} from 'reselect';
 import {FormattedMessage} from 'react-intl';
 import {selectCurrentUser} from '../../containers/App/selectors';
-import {NameSpan, Flex, Avatar, Caret, DropDown} from './styles';
+import {
+  NameSpan,
+  Flex,
+  Avatar,
+  Caret,
+  DropDown,
+  CustomLink,
+  Ul,
+  Li
+} from './styles';
 import messages from './messages';
 import {Link} from 'react-router-dom';
 
@@ -27,19 +36,20 @@ class ProfileToggle extends React.Component {
             </Caret>
           </Flex>
         </DropDown>
-        <ul className="dropdown-menu">
-          <li>
-            <Link to="/profile">
+        <Ul className="dropdown-menu">
+          <Li>
+            <CustomLink to="/profile">
               <FormattedMessage {...messages.profile}/>
-            </Link>
-          </li>
-          <li><a href="#" onClick={(e) => {
-            this.handleClickLogout(e)
-          }}>
-            <FormattedMessage {...messages.logout}/>
-          </a>
-          </li>
-        </ul>
+            </CustomLink>
+          </Li>
+          <Li>
+            <CustomLink to="#" onClick={(e) => {
+              this.handleClickLogout(e)
+            }}>
+              <FormattedMessage {...messages.logout}/>
+            </CustomLink>
+          </Li>
+        </Ul>
       </li>
     )
   }

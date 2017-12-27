@@ -8,17 +8,14 @@ export const Flex = styled.div`
 `;
 
 export const Container = styled.div`
-  background-color: #8B9492;
+  background-color: #2a2a2a;
   padding: 20px 10px;
   margin-bottom: 20px;
-  border-left: 1px solid #9a9a9a;
-  border-right: 1px solid #9a9a9a;
-  border-bottom: 1px solid #9a9a9a;
   color: #fff;
 `;
 
 export const Header = styled.div`
-  background-color: #2D3740;
+  background-color: #080808;
   padding: 10px 10px;
   color: #fff;
   font-weight: bold;

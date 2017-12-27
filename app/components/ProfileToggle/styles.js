@@ -1,10 +1,10 @@
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 export const NameSpan = styled.div `
   margin: 5px 0 0 5px;
   font-weight: bold;
   font-size: 15px;
-  color: #fff;
 `;
 
 export const Flex = styled.span `
@@ -21,10 +21,24 @@ export const Caret = styled.span `
   margin: 17px 0 0 5px;
 `;
 
+export const Ul = styled.ul`
+  padding: 0;
+  border-radius: 0;
+`;
+
+export const CustomLink = styled(Link)`
+`;
+
 export const Li = styled.li `
+  background-color: #fff;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 2px;
   &:hover {
-    background-color: #47592c;
-    color: #fff;
+    background-color: #f1f1f1;
+    ${CustomLink} {
+      background-color: #f1f1f1;
+    }
   }
 `;
 

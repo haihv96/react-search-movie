@@ -1,9 +1,3 @@
-/**
-*
-* LocaleToggle
-*
-*/
-
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -25,12 +19,5 @@ function Toggle(props) {
     </Select>
   );
 }
-
-Toggle.propTypes = {
-  onToggle: PropTypes.func,
-  values: PropTypes.array,
-  value: PropTypes.string,
-  messages: PropTypes.object,
-};
 
 export default Toggle;

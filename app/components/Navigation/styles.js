@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import navbar from '../../assets/images/header-bg.jpg';
 
 export const Navbar = styled.nav`
   && {
-    background-image: url(${navbar});
-    background-repeat: repeat-x;
+    background-color: #222;
     border-radius: 0;
+    font-size: 17px;
+    font-weight: bold;
   }
 `;
 

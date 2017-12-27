@@ -29,7 +29,7 @@ export const MovieContainer = styled.div`
   margin-right: 10px;
   &:hover {
     ${H4} {
-        color: #ff3600;
+        color: #dacb46;
     }
     ${Thumbnail}{
       opacity: 0.6;

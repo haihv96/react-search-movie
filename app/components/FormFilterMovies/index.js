@@ -10,7 +10,8 @@ import {
 import messages from './messages';
 import {Flex} from '../../containers/App/styles';
 import {
-  FilterButton
+  FilterButton,
+  FormGroupCustom
 } from './styles';
 
 class FormFilterMovies extends React.Component {
@@ -45,7 +46,7 @@ class FormFilterMovies extends React.Component {
     return (
       <form onSubmit={this.props.handleSubmit}>
         <Flex>
-          <FormGroup>
+          <FormGroupCustom>
             <ControlLabel><FormattedMessage {...messages.sortBy}/></ControlLabel>
             <Field name="sort_by" component="select" className="form-control">
               {
@@ -59,8 +60,8 @@ class FormFilterMovies extends React.Component {
                 ))
               }
             </Field>
-          </FormGroup>
-          <FormGroup>
+          </FormGroupCustom>
+          <FormGroupCustom>
             <ControlLabel><FormattedMessage {...messages.releaseYear}/></ControlLabel>
             <Field name="primary_release_year" component="select" className="form-control">
               <option>
@@ -72,7 +73,7 @@ class FormFilterMovies extends React.Component {
                 ))
               }
             </Field>
-          </FormGroup>
+          </FormGroupCustom>
           <FormGroup>
             <FilterButton type="submit" bsStyle="primary">
               <FormattedMessage {...messages.filterMovies}/>

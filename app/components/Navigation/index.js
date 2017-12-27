@@ -16,9 +16,10 @@ class Navigation extends React.Component {
       null : this.props.auth.get('logged_in') ? <ProfileToggle/> : <LoginArea/>;
     var myBookmark = this.props.auth.get('logged_in') ? <MyBookmark location={this.props.location}/> : null;
     return (
-      <div>
-        <Navbar className="navbar navbar-inverse item" noRadius>
-          <div className="container-fluid">
+      <Navbar className="navbar navbar-inverse item" noRadius>
+
+        <div className="container">
+          <div className="row">
             <div className="navbar-header">
               <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span className="icon-bar"></span>
@@ -43,8 +44,8 @@ class Navigation extends React.Component {
               </Ul>
             </div>
           </div>
-        </Navbar>
-      </div>
+        </div>
+      </Navbar>
     )
   }
 }
