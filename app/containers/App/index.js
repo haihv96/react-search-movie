@@ -17,7 +17,7 @@ import MovieDetail from '../MovieDetail';
 import NotFoundPage from '../../containers/NotFoundPage/Loadable';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer/Loadable';
-import Notification from '../Notification';
+import Notification from '../../components/Notification';
 import Profile from '../Profile';
 import AuthRouteProtected from '../../components/AuthRouteProtected';
 

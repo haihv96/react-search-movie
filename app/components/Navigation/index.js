@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import {Navbar, Ul} from './styles';
 import {connect} from 'react-redux';
 import LoginArea from '../../containers/LoginArea';
-import ProfileToggle from '../../containers/ProfileToggle';
+import ProfileToggle from '../ProfileToggle';
 import MyBookmark from './MyBookmark';
 import {createStructuredSelector} from 'reselect';
 import {selectAuth} from '../../containers/App/selectors';

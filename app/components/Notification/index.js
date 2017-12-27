@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import {FormattedMessage} from 'react-intl';
 import NotificationSystem from 'react-notification-system';
 import {createStructuredSelector} from 'reselect';
-import {selectFacebookSdk} from '../App/selectors';
+import {selectFacebookSdk} from '../../containers/App/selectors';
 import messages from "./messages";
 
 class Notification extends React.Component {

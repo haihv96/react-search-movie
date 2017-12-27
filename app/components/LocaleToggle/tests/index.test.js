@@ -4,8 +4,8 @@ import { browserHistory } from 'react-router-dom';
 import { shallow, mount } from 'enzyme';
 
 import LocaleToggle, { mapDispatchToProps } from '../index';
-import { changeLocale } from '../../LanguageProvider/actions';
-import LanguageProvider from '../../LanguageProvider';
+import { changeLocale } from '../../../containers/LanguageProvider/actions';
+import LanguageProvider from '../../../containers/LanguageProvider/index';
 
 import configureStore from '../../../configureStore';
 import { translationMessages } from '../../../i18n';

@@ -1,9 +1,9 @@
 import React from 'react';
-import {logout} from '../App/actions';
+import {logout} from '../../containers/App/actions';
 import {connect} from 'react-redux';
 import {createStructuredSelector} from 'reselect';
 import {FormattedMessage} from 'react-intl';
-import {selectCurrentUser} from '../App/selectors';
+import {selectCurrentUser} from '../../containers/App/selectors';
 import {NameSpan, Flex, Avatar, Caret, DropDown} from './styles';
 import messages from './messages';
 import {Link} from 'react-router-dom';

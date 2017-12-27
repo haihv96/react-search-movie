@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {Wrapper} from './styles';
-import LocaleToggle from '../../containers/LocaleToggle';
+import LocaleToggle from '../LocaleToggle';
 
 function Footer() {
   return (
